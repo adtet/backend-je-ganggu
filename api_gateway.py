@@ -4,7 +4,7 @@ from sqllib import cek_ruangan, input_data,cek_data,update_data
 app = Flask(__name__)
 
 
-@app.route('/indoor/input/data/<uuid>/<suhu>/<detak_jtg>/<saturasi>/<ruangan>',methods=['POST'])
+@app.route('/indoor/input/data/<uuid>/<suhu>/<detak_jtg>/<saturasi>/<ruangan>',methods=['GET'])
 def data_input(uuid,suhu,detak_jtg,saturasi,ruangan):
     cek = cek_data(uuid)
     if cek==False:

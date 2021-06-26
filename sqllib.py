@@ -5,7 +5,7 @@ def sql_connection():
     db = mysql.connector.connect(host="localhost",
                                  user="root",
                                  password="",
-                                 database="db_idha")
+                                 database="db_indoor")
     return db
 
 def input_data(uuid,suhu,detak_jtg,saturasi,ruangan,status):
